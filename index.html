@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CAMBIA EL TÍTULO SEGÚN TU TIENDA -->
+  <title>PALUDETALLES</title>
+  <meta name="description" content="Catálogo digital de [Nombre de tu Tienda]. Descubre nuestra colección.">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- CAMBIA LA TIPOGRAFÍA AQUÍ SI LO DESEAS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Life+Savers:wght@400;700;800&family=Ranchers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- 1. HERO                                                       -->
+  <!-- ============================================================ -->
+  <header class="hero" id="inicio">
+    <div class="hero__bg-shapes">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+    </div>
+    <nav class="hero__nav">
+      <!-- ========================================================= -->
+      <!-- LOGO: Reemplaza este placeholder por tu imagen PNG        -->
+      <!-- Ruta sugerida: assets/images/logo.png                     -->
+      <!-- ========================================================= -->
+      <div class="hero__logo">
+        <img src="assets/images/logo.png" alt="Logo de la tienda" class="hero__logo-img">
+        <span class="hero__logo-text">PALUDETALLES</span>
+        <!-- ↑ CAMBIA "NOMBRE TIENDA" por el nombre real de tu tienda -->
+      </div>
+      <ul class="hero__menu" id="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+      <button class="hero__toggle" id="nav-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="hero__content">
+      <div class="hero__text">
+        <!-- ======================================================= -->
+        <!-- HERO: Personaliza estos textos                          -->
+        <!-- ======================================================= -->
+        <h1 class="hero__title">
+          <!-- CAMBIA ESTE TEXTO por el eslogan principal de tu tienda -->
+           Hecho con amor,<br>
+          <span class="hero__title--accent">para durar por siempre</span>
+        </h1>
+        <p class="hero__subtitle">
+          <!-- CAMBIA ESTE TEXTO por una breve descripción -->
+           Descubre flores eternas y detalles únicos elaborados artesanalmente para celebrar los momentos más especiales.<br><br>
+        <a href="#catalogo" class="btn btn--primary">Ver Catálogo</a>
+      </div>
+      <div class="hero__image">
+        <!-- ======================================================= -->
+        <!-- HERO IMAGEN: Reemplaza por tu imagen PNG sin fondo      -->
+        <!-- Ruta sugerida: assets/images/hero-producto.png          -->
+        <!-- ======================================================= -->
+        <img src="assets/images/florrosa.png" alt="Producto destacado" class="hero__img">
+        <div class="hero__img-deco"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- 2. QUIÉNES SOMOS                                             -->
+  <!-- ============================================================ -->
+  <section class="section about" id="nosotros">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__image">
+          <!-- ===================================================== -->
+          <!-- NOSOTROS: Reemplaza por tu imagen PNG                 -->
+          <!-- Ruta sugerida: assets/images/about-nosotros.png       -->
+          <!-- ===================================================== -->
+          <img src="assets/images/perritos.png" alt="Sobre nosotros" class="about__img">
+        </div>
+        <div class="about__text">
+          <!-- ===================================================== -->
+          <!-- NOSOTROS: Personaliza estos textos                    -->
+          <!-- ===================================================== -->
+          <h2 class="section__title">
+            <!-- CAMBIA ESTE TÍTULO -->
+            Quiénes Somos
+          </h2>
+          <p class="about__description">
+            <!-- CAMBIA ESTE TEXTO por la historia de tu tienda -->
+            Somos una pequeña empresa dedicada a crear flores eternas y detalles personalizados hechos a mano con dedicación, 
+            creatividad y mucho amor. Cada creación está elaborada cuidadosamente para convertir momentos especiales en recuerdos que perduren para siempre.
+          </p>
+          <p class="about__description">
+            <!-- CAMBIA ESTE TEXTO (opcional, puedes borrar este párrafo) -->
+            Nuestro compromiso es crear detalles que hablen por ti, convirtiendo cada flor y cada regalo en una muestra de cariño que pueda conservarse como un hermoso recuerdo.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 3. CATÁLOGO DE PRODUCTOS                                     -->
+  <!-- ============================================================ -->
+  <section class="section catalog" id="catalogo">
+    <div class="container">
+      <h2 class="section__title section__title--center">
+        <!-- CAMBIA ESTE TÍTULO -->
+        Nuestro Catálogo
+      </h2>
+      <p class="section__subtitle">
+        <!-- CAMBIA ESTE TEXTO -->
+        Productos seleccionados especialmente para ti
+      </p>
+      <div class="catalog__grid" id="catalog-grid">
+        <!-- ======================================================= -->
+        <!-- CATÁLOGO: Cada .product-card es un producto             -->
+        <!-- Duplica este bloque para agregar más productos          -->
+        <!-- ======================================================= -->
+
+        <div class="product-card" data-category="Flores Eternas">
+          <div class="product-card__image">
+            <!-- =================================================== -->
+            <!-- PRODUCTO: Reemplaza por tu imagen PNG sin fondo     -->
+            <!-- Ruta sugerida: assets/images/producto-1.png         -->
+            <!-- =================================================== -->
+            <img src="assets/images/florfucsia.png" alt="Nombre del producto" class="product-card__img">
+            <div class="product-card__overlay"></div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">
+              <!-- CAMBIA el nombre del producto -->
+              Producto Ejemplo
+            </h3>
+            <p class="product-card__price">
+              <!-- CAMBIA el precio -->
+              s/. 35.00
+            </p>
+            
+            <button class="btn btn--small btn--outline product-card__btn">
+              Consultar
+            </button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="Flores Eternas">
+          <div class="product-card__image">
+            <img src="assets/images/florcolores.png" alt="Nombre del producto" class="product-card__img">
+            <div class="product-card__overlay"></div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Flor Eterna</h3>
+            <p class="product-card__price">S/. 20.00</p>
+            <button class="btn btn--small btn--outline product-card__btn">Consultar</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="Flores Eternas">
+          <div class="product-card__image">
+            <img src="assets/images/florrosa.png" alt="Nombre del producto" class="product-card__img">
+            <div class="product-card__overlay"></div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Flor Eterna</h3>
+            <p class="product-card__price">S/. 50.00</p>
+            
+            <button class="btn btn--small btn--outline product-card__btn">Consultar</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="Flores Eternas">
+          <div class="product-card__image">
+            <img src="assets/images/florroja.png" alt="Nombre del producto" class="product-card__img">
+            <div class="product-card__overlay"></div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Flor Eterna</h3>
+            <p class="product-card__price">S/. 15.00</p>
+            
+            <button class="btn btn--small btn--outline product-card__btn">Consultar</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="Flores Eternas">
+          <div class="product-card__image">
+            <img src="assets/images/bouquet.png" alt="Nombre del producto" class="product-card__img">
+            <div class="product-card__overlay"></div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Flor Eterna</h3>
+            <p class="product-card__price">S/. 20.00</p>
+            
+            <button class="btn btn--small btn--outline product-card__btn">Consultar</button>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="Flores Eternas">
+          <div class="product-card__image">
+            <img src="assets/images/tuliblue.png" alt="Nombre del producto" class="product-card__img">
+            <div class="product-card__overlay"></div>
+          </div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Flor Eterna</h3>
+            <p class="product-card__price">S/. 15.00</p>
+            
+            <button class="btn btn--small btn--outline product-card__btn">Consultar</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ======================================================= -->
+      <!-- BOTÓN "SEGUIR EXPLORANDO EL CATÁLOGO"                   -->
+      <!-- Al hacer clic abre catalogo.html (catálogo completo).   -->
+      <!-- Cambia el texto del botón aquí.                         -->
+      <!-- ======================================================= -->
+      <div class="catalog__action">
+        <a href="catalogo.html" class="btn btn--primary catalog__btn">
+          Seguir explorando el catálogo
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 4. OPINIONES                                                 -->
+  <!-- ============================================================ -->
+  <section class="section reviews" id="opiniones">
+    <div class="container">
+      <h2 class="section__title section__title--center">
+        <!-- CAMBIA ESTE TÍTULO -->
+        Lo Que Dicen Nuestros Clientes
+      </h2>
+      <p class="section__subtitle">
+        <!-- CAMBIA ESTE TEXTO -->
+        La satisfacción de quienes confían en nosotros
+      </p>
+      <div class="reviews__grid">
+        <!-- ======================================================= -->
+        <!-- OPINIONES: Cada .review-card es una reseña              -->
+        <!-- Modifica o elimina según necesites                      -->
+        <!-- ======================================================= -->
+
+        <div class="review-card">
+          <div class="review-card__stars">
+            ★★★★★
+          </div>
+          <p class="review-card__text">
+            <!-- CAMBIA ESTE TEXTO -->
+            "Los productos son increíbles. La calidad superó mis expectativas.
+            Sin duda volveré a comprar."
+          </p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">
+              <!-- AVATAR: Reemplaza por imagen PNG (opcional) -->
+              <img src="assets/images/mujer.png" alt="Cliente" class="review-card__avatar-img">
+            </div>
+            <div class="review-card__info">
+              <strong class="review-card__name">
+                <!-- CAMBIA ESTE NOMBRE -->
+                María García
+              </strong>
+              <span class="review-card__role">
+                <!-- CAMBIA ESTE TEXTO -->
+                Cliente frecuente
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">
+            "Excelente atención al cliente y los productos llegaron en perfecto
+            estado. Muy recomendados."
+          </p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">
+              <img src="assets/images/hombre.png" alt="Cliente" class="review-card__avatar-img">
+            </div>
+            <div class="review-card__info">
+              <strong class="review-card__name">Carlos Mendoza</strong>
+              <span class="review-card__role">Comprador recurrente</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-card__stars">★★★★★</div>
+          <p class="review-card__text">
+            "Me encantó la presentación y el detalle en cada producto.
+            Perfecto para regalar o consentirse."
+          </p>
+          <div class="review-card__author">
+            <div class="review-card__avatar">
+              <img src="assets/images/mujer2.png" alt="Cliente" class="review-card__avatar-img">
+            </div>
+            <div class="review-card__info">
+              <strong class="review-card__name">Ana López</strong>
+              <span class="review-card__role">Cliente nueva</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 5. PREGUNTAS FRECUENTES                                      -->
+  <!-- ============================================================ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <h2 class="section__title section__title--center">
+        <!-- CAMBIA ESTE TÍTULO -->
+        Preguntas Frecuentes
+      </h2>
+      <p class="section__subtitle">
+        <!-- CAMBIA ESTE TEXTO -->
+        Resolvemos tus dudas
+      </p>
+      <div class="faq__list" id="faq-list">
+        <!-- ======================================================= -->
+        <!-- FAQ: Cada .faq-item es una pregunta                     -->
+        <!-- Agrega o quita items fácilmente                        -->
+        <!-- ======================================================= -->
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            <!-- CAMBIA ESTA PREGUNTA -->
+            <span>¿Cómo puedo realizar un pedido?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>
+              <!-- CAMBIA ESTA RESPUESTA -->
+              Puedes navegar por nuestro catálogo, seleccionar los productos
+              que más te gusten y hacer clic en "Consultar" para recibir
+              atención personalizada.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>¿Cuáles son los medios de pago?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>
+              Aceptamos transferencias bancarias, depósitos y pagos a través
+              de diversas plataformas digitales. Consulta las opciones
+              disponibles al momento de tu pedido.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>¿Hacen envíos a todo el país?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>
+              Sí, realizamos envíos a nivel nacional. Los tiempos de entrega
+              varían según la ubicación. Te proporcionaremos un número de
+              seguimiento para tu pedido.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__question" aria-expanded="false">
+            <span>¿Cómo cuido mis productos?</span>
+            <span class="faq-item__icon">+</span>
+          </button>
+          <div class="faq-item__answer">
+            <p>
+              Recomendamos seguir las instrucciones de cuidado incluidas
+              con cada producto. En general, mantenlos en un lugar fresco
+              y seco, alejado de la luz solar directa.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 6. CONTACTO - WHATSAPP                                       -->
+  <!-- ============================================================ -->
+  <!--                                                              -->
+  <!-- PERSONALIZACIÓN:                                             -->
+  <!--   - Título:        línea ~569                                -->
+  <!--   - Subtítulo:     línea ~573                                -->
+  <!--   - Texto botón:   línea ~597                                -->
+  <!--   - Número WhatsApp:  script.js (variable WHATSAPP_NUMBER)         -->
+  <!--   - Mensaje default:  script.js (variable DEFAULT_WHATSAPP_MESSAGE) -->
+  <!--   - Ícono WhatsApp:   SVG inline (cámbialo aquí si deseas)   -->
+  <!-- ============================================================ -->
+  <section class="section contact" id="contacto">
+    <div class="container">
+      <h2 class="section__title section__title--center">
+        <!-- CAMBIA ESTE TÍTULO -->
+        Contáctanos
+      </h2>
+      <p class="section__subtitle">
+        <!-- CAMBIA ESTE TEXTO -->
+        Estamos aquí para ayudarte
+      </p>
+      <div class="contact__whatsapp">
+        <!-- Tarjeta central de WhatsApp -->
+        <div class="contact__whatsapp-card">
+          <div class="contact__whatsapp-icon">
+            <!-- =================================================== -->
+            <!-- ÍCONO WHATSAPP: Reemplaza este SVG si deseas otro   -->
+            <!-- Puedes usar Font Awesome, un PNG, o cualquier icono -->
+            <!-- =================================================== -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="contact__whatsapp-svg">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+          </div>
+          <h3 class="contact__whatsapp-title">
+            <!-- CAMBIA ESTE TEXTO -->
+            Escríbenos por WhatsApp
+          </h3>
+          <p class="contact__whatsapp-desc">
+            <!-- CAMBIA ESTE TEXTO -->
+            Responde rápido. Estamos listos para ayudarte.
+          </p>
+          <a href="#" class="btn contact__whatsapp-btn" id="whatsapp-btn">
+            <!-- CAMBIA EL TEXTO DEL BOTÓN AQUÍ -->
+            Contactar por WhatsApp
+          </a>
+        </div>
+
+        <!-- Información adicional de contacto -->
+        <div class="contact__info">
+          <div class="contact__info-item">
+            <span class="contact__info-icon">📍</span>
+            <div>
+              <strong>Dirección</strong>
+              <p>
+                <!-- CAMBIA ESTA DIRECCIÓN -->
+                [Los Olivos - Previ]
+              </p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <p>
+                <!-- CAMBIA ESTE EMAIL -->
+                [pattycoello26@gmail.com]
+              </p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <span class="contact__info-icon">📱</span>
+            <div>
+              <strong>Teléfono</strong>
+              <p>
+                <!-- CAMBIA ESTE TELÉFONO -->
+                [+51 982 665 034]
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 7. FOOTER                                                    -->
+  <!-- ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <!-- LOGO FOOTER: Reemplaza por tu imagen PNG -->
+          <img src="assets/images/logo.png" alt="Logo" class="footer__logo">
+          <p class="footer__desc">
+            <!-- CAMBIA ESTE TEXTO -->
+            Detalles hechos con amor
+            y dedicación para ti.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h4 class="footer__heading">Síguenos</h4>
+          <div class="footer__social-icons">
+            <!-- =================================================== -->
+            <!-- REDES SOCIALES: Cambia los href con tus enlaces     -->
+            <!-- =================================================== -->
+            <a href="#" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
+              <!-- ICONO: Reemplaza por tu PNG si lo deseas -->
+              <span class="footer__social-icon">FB</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <span class="footer__social-icon">IG</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp">
+              <span class="footer__social-icon">WA</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          <!-- CAMBIA ESTE TEXTO -->
+          &copy; 2026 PALUDETALLES. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

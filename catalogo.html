@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CAMBIA EL TÍTULO SEGÚN TU TIENDA -->
+  <title>Catálogo — PALUDETALLES</title>
+  <meta name="description" content="Catálogo completo de flores eternas y arreglos especiales.">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- CAMBIA LA TIPOGRAFÍA AQUÍ SI LO DESEAS (debe coincidir con index.html) -->
+  <link href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Life+Savers:wght@400;700;800&family=Ranchers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================ -->
+  <!-- ENCABEZADO (mismo estilo que la página principal)             -->
+  <!-- ============================================================ -->
+  <header class="hero hero--page" id="inicio">
+    <div class="hero__bg-shapes">
+      <div class="hero__shape hero__shape--1"></div>
+      <div class="hero__shape hero__shape--2"></div>
+      <div class="hero__shape hero__shape--3"></div>
+    </div>
+    <nav class="hero__nav">
+      <!-- ========================================================= -->
+      <!-- LOGO: Reemplaza este placeholder por tu imagen PNG        -->
+      <!-- ========================================================= -->
+      <div class="hero__logo">
+        <a href="index.html">
+          <img src="assets/images/logo.png" alt="Logo de la tienda" class="hero__logo-img">
+        </a>
+        <a href="index.html" class="hero__logo-text">PALUDETALLES</a>
+      </div>
+      <ul class="hero__menu" id="nav-menu">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#nosotros">Nosotros</a></li>
+        <li><a href="#catalogo">Catálogo</a></li>
+        <li><a href="index.html#contacto">Contacto</a></li>
+      </ul>
+      <button class="hero__toggle" id="nav-toggle" aria-label="Menú">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="hero__content">
+      <div class="hero__text">
+        <!-- ======================================================= -->
+        <!-- BANNER DEL CATÁLOGO: Personaliza estos textos           -->
+        <!-- ======================================================= -->
+        <h1 class="hero__title">
+          Nuestro Catálogo
+        </h1>
+        <p class="hero__subtitle">
+          Flores eternas y arreglos especiales elaborados con amor
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- CATÁLOGO DE PRODUCTOS                                        -->
+  <!-- ============================================================ -->
+  <!--                                                              -->
+  <!-- Las tarjetas se generan AUTOMÁTICAMENTE desde products.js.   -->
+  <!-- No agregues productos aquí, edita products.js.               -->
+  <!-- ============================================================ -->
+  <section class="section catalog" id="catalogo">
+    <div class="container">
+      <h2 class="section__title section__title--center">
+        <!-- CAMBIA ESTE TÍTULO -->
+        Todos Nuestros Productos
+      </h2>
+      <p class="section__subtitle">
+        <!-- CAMBIA ESTE TEXTO -->
+        Haz clic en "Consultar por WhatsApp" en cualquier producto para
+        recibir atención personalizada.
+      </p>
+      <div class="catalog__grid" id="catalog-grid">
+        <!-- Los productos se inyectan aquí desde catalog.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- PIE DE PÁGINA (mismo estilo que la página principal)          -->
+  <!-- ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <!-- LOGO FOOTER: Reemplaza por tu imagen PNG -->
+          <img src="assets/images/logo.png" alt="Logo" class="footer__logo">
+          <p class="footer__desc">
+            Detalles hechos con amor
+            y dedicación para ti.
+          </p>
+        </div>
+        <div class="footer__links">
+          <h4 class="footer__heading">Enlaces Rápidos</h4>
+          <ul>
+            <li><a href="index.html#inicio">Inicio</a></li>
+            <li><a href="index.html#nosotros">Nosotros</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="index.html#contacto">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h4 class="footer__heading">Síguenos</h4>
+          <div class="footer__social-icons">
+            <!-- =================================================== -->
+            <!-- REDES SOCIALES: Cambia los href con tus enlaces     -->
+            <!-- =================================================== -->
+            <a href="#" target="_blank" rel="noopener" class="footer__social-link" aria-label="Facebook">
+              <span class="footer__social-icon">FB</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="footer__social-link" aria-label="Instagram">
+              <span class="footer__social-icon">IG</span>
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="footer__social-link" aria-label="WhatsApp">
+              <span class="footer__social-icon">WA</span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>
+          &copy; 2026 PALUDETALLES. Todos los derechos reservados.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- products.js: datos del catálogo -->
+  <script src="products.js"></script>
+  <!-- script.js: menú, animaciones y número de WhatsApp global -->
+  <script src="script.js"></script>
+  <!-- catalog.js: renderiza las tarjetas y conecta los botones -->
+  <script src="catalog.js"></script>
+</body>
+</html>
