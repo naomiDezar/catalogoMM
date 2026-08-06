@@ -44,7 +44,7 @@ const products = [
   {
     id: 1,
     nombre: "Flor en maceta",
-    precio: "S/. 35.00",
+    precio: "S/. 15.00",
     descripcion: "Flores rosas en su maceta, perfecto para ocasiones especiales.",
     categoria: "Flores Eternas",
     imagen: "assets/images/florfucsia.png",
