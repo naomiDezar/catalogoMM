@@ -149,25 +149,46 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Intersection Observer para animaciones
-  const observerOptions = {
-    root: null,
-    rootMargin: '0px 0px -80px 0px',
-    threshold: 0.1
-  };
+  // Muestra de inmediato los elementos que ya están en pantalla al cargar.
+  // Evita que el contenido quede invisible (opacity: 0) en móviles cuando el
+  // observador tarda o no llega a dispararse con contenedores muy altos.
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    const vh = window.innerHeight || document.documentElement.clientHeight;
+    return rect.top < vh && rect.bottom > 0;
+  }
 
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        // Deja de observar una vez visible para mejorar rendimiento
-        observer.unobserve(entry.target);
-      }
-    });
-  }, observerOptions);
+  document.querySelectorAll('.animate').forEach(el => {
+    if (isInViewport(el)) el.classList.add('visible');
+  });
 
-  // Observa todos los elementos con la clase .animate
-  document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+  // Si el navegador no soporta IntersectionObserver, mostramos todo.
+  if (!('IntersectionObserver' in window)) {
+    document.querySelectorAll('.animate').forEach(el => el.classList.add('visible'));
+  } else {
+    // Intersection Observer para animaciones.
+    // threshold: 0 (cualquier píxel visible dispara la animación) para que
+    // funcione también en móviles con secciones muy altas, donde un umbral
+    // de 0.1 nunca se alcanza y la sección quedaría en blanco (invisible).
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px 0px -80px 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Deja de observar una vez visible para mejorar rendimiento
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observa todos los elementos con la clase .animate
+    document.querySelectorAll('.animate').forEach(el => observer.observe(el));
+  }
 
 
   // ==========================================================
