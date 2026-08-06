@@ -218,9 +218,9 @@ const products = [
 
   {
     id: 18,
-    nombre: "Arreglo Alianza Lima",
+    nombre: "Portalapicero Alianza Lima",
     precio: "S/. 18.00",
-    descripcion: "Arreglo eterno de Alianza Lima.",
+    descripcion: "Hermoso Portalapicero de Alianza Lima.",
     categoria: "Equipos de Fútbol",
     imagen: "assets/images/alianza.png",
     imageUrl: "https://midominio.com/assets/images/productos/producto-17.png"
@@ -228,9 +228,9 @@ const products = [
 
   {
     id: 19,
-    nombre: "Arreglo Universitario",
+    nombre: "Portalapicero Universitario",
     precio: "S/. 18.00",
-    descripcion: "Arreglo eterno de Universitario de Deportes.",
+    descripcion: "Hermoso Portalapicero  de Universitario de Deportes.",
     categoria: "Equipos de Fútbol",
     imagen: "assets/images/universitario.png",
     imageUrl: "https://midominio.com/assets/images/productos/producto-18.png"
@@ -238,9 +238,9 @@ const products = [
 
   {
     id: 20,
-    nombre: "Arreglo Sporting Cristal",
+    nombre: "Portalapicero Sporting Cristal",
     precio: "S/. 18.00",
-    descripcion: "Arreglo eterno de Sporting Cristal.",
+    descripcion: "Hermoso Portalapicero  de Sporting Cristal.",
     categoria: "Equipos de Fútbol",
     imagen: "assets/images/cristal.png",
     imageUrl: "https://midominio.com/assets/images/productos/producto-19.png"
